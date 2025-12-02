@@ -4,8 +4,10 @@ persona = {
     "Nacimiento":"02-06-2006"
 };
 
-tag = ["Nombre: ", "Edad: ", "Nacimiento: "];
+tag = ["Nombre", "Edad", "Nacimiento"];
 
-for (let i = 0; i < tag; i++) {
-    
+for (let i = 0; i < tag.length; i++) {
+    let tagSetup = tag[i];
+    document.writeln(persona[tagSetup]);
 }
+
