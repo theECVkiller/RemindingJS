@@ -1,3 +1,4 @@
+/*
 persona = {
     "Nombre":"Emmanuel",
     "Edad":"19 años",
@@ -30,3 +31,22 @@ const sumar = (a, b) => {
 }
 
 document.writeln(`Tu resultado fue "${sumar()}".`)
+*/
+
+let promo = true;
+
+function staff() {
+    let age = prompt("Cuantos años tienes?");
+    if (age >= 18){
+        while (promo){
+                alert("Felicidades!! Eres el primero en llegar, no tienes que pagar entrada.");
+                promo = false
+                while (promo == false){
+                    alert("Lo siento, otro ya tomó la oferta, debes pagar 15$ para pasar.");
+                    //staff();
+            }
+        }
+    } else alert("Lo siento niño, solo se admiten adultos.");
+}
+
+//staff()
