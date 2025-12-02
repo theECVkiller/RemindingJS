@@ -33,6 +33,7 @@ const sumar = (a, b) => {
 document.writeln(`Tu resultado fue "${sumar()}".`)
 */
 
+/*
 let promo = true;
 
 function staff() {
@@ -49,4 +50,17 @@ function staff() {
     } else alert("Lo siento niño, solo se admiten adultos.");
 }
 
-//staff()
+staff() */
+
+class persona {
+    movimiento = "caminando...";
+    sonido = "hablando";
+    constructor(nombre, edad){
+        this.name = nombre;
+        this.age = edad;
+    }
+}
+
+let Emmanuel = new persona("Emmanuel", 19);
+document.writeln(`Un nuevo humano ha sido creado, de nombre; ${Emmanuel.name}, y edad de; ${Emmanuel.age} años.</br></br>`);
+document.writeln(`${Emmanuel.name} esta ${Emmanuel.movimiento}`);
