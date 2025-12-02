@@ -22,3 +22,11 @@ do {
     }
     age = 0;
 } while (age >= 18);
+
+const sumar = (a, b) => {
+    a=parseInt(prompt("Primer valor a sumar"));
+    b=parseInt(prompt("Segundo valor a sumar"));
+    let r = a + b;
+}
+
+document.writeln(`Tu resultado fue "${sumar()}".`)
