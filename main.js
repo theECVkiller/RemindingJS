@@ -52,6 +52,7 @@ function staff() {
 
 staff() */
 
+/*
 class persona {
     movimiento = "caminando...";
     sonido = "hablando";
@@ -64,3 +65,53 @@ class persona {
 let Emmanuel = new persona("Emmanuel", 19);
 document.writeln(`Un nuevo humano ha sido creado, de nombre; ${Emmanuel.name}, y edad de; ${Emmanuel.age} años.</br></br>`);
 document.writeln(`${Emmanuel.name} esta ${Emmanuel.movimiento}`);
+*/
+
+class Dispositivo {
+    constructor(color, peso, resolucion, camara, ram) {
+        this.clr = color;
+        this.pso = peso;
+        this.res = resolucion;
+        this.cam = camara;
+        this.ram = ram;
+    }
+
+    Pwr(swt){
+        alert("El celular está encendido");
+    }
+
+    Restrt(swt){
+        alert("El celular se está reiniciando...");
+    }
+
+    Obturador(){
+        let dt = prompt("Que desea realizar? (Foto/Video)");
+        if (dt == "Foto" || dt == "foto"){
+            alert("Foto tomada!");
+        }
+        else if (dt == "Video" || dt == "video"){
+            let gb = prompt("Grabando...\n\nEscribe \"Stop\" para detener la grabacion.");
+            if (gb == "Stop"){
+                alert("La grabacion se detuvo.");
+            } else alert("Error al relizar la accion...");
+        } else alert("Por favor ingresa que desea realizar (Foto/Video).")
+    }
+
+    info(){
+        alert(`Informacion del dispositivo.
+
+            - Color: ${this.clr}
+            - Peso: ${this.pso}
+            - Resolucion: ${this.res}
+            - Camara: ${this.cam}
+            - Memoria: ${this.ram}`)
+    }
+}
+
+const Tecno = new Dispositivo("Azul marino", "3,5g", "1920 x 1080 Pixeles", "58Mpx", "8 Ram + 5 VRam");
+
+//Tecno.info()
+//Tecno.Pwr();
+//Tecno.Restrt();
+Tecno.Obturador();
+
