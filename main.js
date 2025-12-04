@@ -67,6 +67,8 @@ document.writeln(`Un nuevo humano ha sido creado, de nombre; ${Emmanuel.name}, y
 document.writeln(`${Emmanuel.name} esta ${Emmanuel.movimiento}`);
 */
 
+/*
+
 class Dispositivo {
     constructor(color, peso, resolucion, camara, ram) {
         this.clr = color;
@@ -115,3 +117,20 @@ const Tecno = new Dispositivo("Azul marino", "3,5g", "1920 x 1080 Pixeles", "58M
 //Tecno.Restrt();
 Tecno.Obturador();
 
+*/
+
+//let str = "Hola, ";
+//let str2 = "como estas?";
+
+class Str {
+    constructor (){ }
+
+    static set Setstr (v) { this.txt = v; document.writeln(this.txt); }
+    
+}
+
+Str.Setstr = "Hola mundo!";
+
+
+
+//document.writeln(str.concat(str2));
