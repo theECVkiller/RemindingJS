@@ -119,8 +119,9 @@ Tecno.Obturador();
 
 */
 
-//let str = "Hola, ";
-//let str2 = "como estas?";
+/*
+let str = "Hola, ";
+let str2 = "como estas?";
 
 class Str {
     constructor (){ }
@@ -132,5 +133,5 @@ class Str {
 Str.Setstr = "Hola mundo!";
 
 
-
-//document.writeln(str.concat(str2));
+document.writeln(str.concat(str2));
+*/
