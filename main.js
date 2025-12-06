@@ -139,3 +139,5 @@ document.writeln(str.concat(str2));
 document.writeln(`<p id="txt" >Hola Mundo!</p>`);
 const txt = document.getElementById("txt");
 txt.style.color = "#f0f";
+
+console.log("Sex");
